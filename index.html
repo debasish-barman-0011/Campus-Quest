@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your ID | Brainware University |</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a39c29d29e.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="./images/logo.jpg" alt="BWU Logo">
+      <h2>BRAINWARE UNIVERSITY</h2>
+    </div>
+    <div class="navbar-links">
+      <a href="purpose.html">Purpose</a>
+      <a href="rules-regulations.html">Rules & Regulations</a>
+      <a href="developers.html">Developers</a>
+    </div>
+    <div class="theme-toggle">
+      <i class="fas fa-sun"></i>
+    </div>
+    <div class="navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <div class="content-wrapper">
+    <div class="main-container">
+      <!-- Form to Take Students Details-->
+      <div class="form-group">
+        <label for="category">Department / Branch:</label>
+        <select id="category">
+          <optgroup label="Under Graduate Courses">
+
+            <option value="BAG"> BSc.(H) Agriculture </option>
+            <option value="BBA"> BBA (H)</option>
+            <option value="BBT"> BSc. Biotechnology </option>
+            <option value="BBD"> BBA Digital Marketing</option>
+            <option value="BBL"> Bachelor of Business Law </option>
+            <option value="BCA" selected> BCA </option>
+            <option value="BCT"> Critical Care Technology</option>
+            <option value="BEC"> B.Tech Electronics & Comm </option>
+            <option value="BEN"> English (H) </option>
+            <option value="BHM"> BBA Hospital Management </option>
+            <option value="BNC"> Cyber Science Technology </option>
+            <option value="BMJ"> BSc. Media Science</option>
+            <option value="BMB"> BSc. Micro Biology </option>
+            <option value="BNS"> BSc. Nursing </option>
+            <option value="BPA"> BSc. PA (Allied Health Science)</option>
+            <option value="BPT"> BSc. PT (Allied Health Science)</option>
+            <option value="BSO"> BSc. OPTO (Allied Health Science)</option>
+            <option value="BOT"> BSc. OTT (Allied Health Science)</option>
+            <option value="BRI"> BSc. MRIT (Allied Health Science)</option>
+            <option value="BTA"> B.Tech. CSE AI ML</option>
+            <option value="BTD"> B.Tech Data Science </option>
+            <option value="LLB"> Bachelor of Laws (LLB)</option>
+
+          </optgroup>
+
+
+          <optgroup label="Post Graduate Courses">
+
+            <option value="MBA"> Master of Buisness Administration(MBA)</option>
+            <option value="MCA"> Master of Computer Applications(MCA)</option>
+            <option value="MHM"> Master of Hospital Management(MHM)</option>
+            <option value="MMJ"> Master of Media Science & Journalism</option>
+            <option value="MSM"> MSc. in Mathematics (MSM)</option>
+            <option value="MTA"> M. Tech (CSE) </option>
+          </optgroup>
+
+          <optgroup label="Diploma Courses">
+
+            <option value="DCS"> Diploma in CS</option>
+            <option value="DCE"> Diploma in Civil</option>
+            <option value="DEC"> Diploma in EC</option>
+            <option value="DME"> Diploma in Mechanical</option>
+
+          </optgroup>
+
+        </select>
+
+
+      </div>
+      <div class="form-group">
+
+        <label for="year">Admission Year:</label>
+        <select id="year">
+          <option value="19">2019</option>
+          <option value="20">2020</option>
+          <option value="21">2021</option>
+          <option value="22" selected>2022</option>
+          <option value="23">2023</option>
+          <option value="24">2024</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="number">Roll:</label>
+        <input type="number" id="number" min="1" max="999" placeholder="Example - 304">
+      </div>
+      <button id="getImageBtn">Get Image</button>
+
+      <a href="https://dbport.netlify.app/" target="_blank"><i class="fa-solid fa-user"></i> Who
+        am I ?</a>
+
+      <div id="imageContainer"></div>
+      </form>
+
+    </div>
+    <div class="image-slider">
+      <h2 style="text-align: center;">BRAINWARE UNIVERSITY</h2>
+      <H1 style="text-align: center;">At a Glance !</H1>
+      <!--  -->
+      <div class="slider-container">
+        <div class="slider">
+          <img src="./images/1.jpg" alt="Image 1" class="slide">
+          <img src="./images/3.jpg" alt="Image 2" class="slide">
+          <img src="./images/2.jpg" alt="Image 3" class="slide">
+          <img src="./images/5.jpg" alt="Image 4" class="slide">
+          <img src="./images/4.jpg" alt="Image 5" class="slide">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)"></button>
+        <button class="next" onclick="changeSlide(1)"></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="./images/footerBanner.jpg" alt="BWU Logo">
+    </div>
+    <div class="footer-links">
+      <a target="_blank" href="https://www.brainwareuniversity.ac.in/studentselfservice/">Student Portal</a>
+      <a target="_blank" href="https://www.brainwareuniversity.ac.in/review.php">Feedback</a>
+      <a href="#">Rules & Regulations</a>
+      <a target="_blank" href="https://www.brainwareuniversity.ac.in/helpline.php">Contact Us</a>
+    </div>
+    <div class="footer-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.8980821336695!2d88.4972749760022!3d22.7320292271068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89c04b6fe4559%3A0xa012120ab7f1da34!2z4Kas4KeN4Kaw4KeH4Kao4KaT4Kav4Ka84Ka-4KawIOCmh-CmieCmqOCmv-CmsOCnjeCmreCmvuCmuOCmv-Cmn-Cmvw!5e0!3m2!1sbn!2sin!4v1723671276415!5m2!1sbn!2sin"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  </footer>
+
+  <script src="theme.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
