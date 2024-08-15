@@ -16,8 +16,8 @@ document.getElementById("getImageBtn").addEventListener("click", function () {
   if (number < 1 || number > 999 || isNaN(number)) {
     Swal.fire({
       icon: "error",
-      title: "Invalid Input",
-      text: "Please enter a valid Student Code between 001 and 999.",
+      title: "Invalid Student Code",
+      text: "Student Code Should be in between 001 and 999.",
     });
     return;
   }
@@ -43,7 +43,7 @@ document.getElementById("getImageBtn").addEventListener("click", function () {
     Swal.fire({
       icon: "error",
       title: "Image Not Found",
-      text: "Invalid Student Details..!!",
+      text: "Access Restricted by Admin..!!",
     });
   };
 
@@ -51,9 +51,9 @@ document.getElementById("getImageBtn").addEventListener("click", function () {
   image.onload = function () {
     Swal.fire({
       icon: "success",
-      title: "Image Loaded",
-      text: "Successfully",
-      timer: 1500,
+      title: "DONE",
+      text: "Image Loaded Successfully",
+      timer: 1000,
       showConfirmButton: false,
     });
   };
