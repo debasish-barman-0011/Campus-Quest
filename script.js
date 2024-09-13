@@ -10,7 +10,8 @@ document.getElementById("getImageBtn").addEventListener("click", function () {
     "https://www.brainwareuniversity.ac.in/univ_student/photo_upload/" +
     category +
     year +
-    paddedNumber;
+    paddedNumber +
+    ".jpg"; // file extension added Sept 2024 //
 
   // Check if the student code is within the allowed range (001 to 999) //
   if (number < 1 || number > 999 || isNaN(number)) {
