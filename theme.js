@@ -7,6 +7,7 @@ navbarToggle.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
 
+/*
 themeToggle.addEventListener("click", () => {
   if (html.getAttribute("data-theme") === "light") {
     html.setAttribute("data-theme", "dark");
@@ -16,3 +17,4 @@ themeToggle.addEventListener("click", () => {
     themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
   }
 });
+*/
