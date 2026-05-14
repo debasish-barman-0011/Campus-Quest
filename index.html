@@ -104,7 +104,9 @@
           <option value="22" selected>2022</option>
           <option value="23">2023</option>
           <option value="24">2024</option>
-
+          <option value="25">2025</option>
+          <option value="26">2026</option>
+          <option value="27">2027</option>
         </select>
       </div>
       <div class="form-group">
@@ -194,7 +196,7 @@
         icon: 'warning',
         title: 'Login Required',
         text: 'Register Yourself Before Login',
-        timer: 3000,
+        timer: 1000,
         showCancelButton: false,
         showConfirmButton: false
       }).then(() => {
@@ -214,7 +216,7 @@
             icon: 'error',
             title: 'You have been logged out.',
             showConfirmButton: false,
-            timer: 3000
+            timer: 1000
           }).then(() => {
             localStorage.removeItem("userLoggedIn");
             window.location.href = 'login.html';
